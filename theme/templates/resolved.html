@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+
+	{% set outages = categories | categories_dict %}
+
+	<div class="bodycontent">
+
+		<div class="bg-light pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="text-right h4 mt-4"><a href="{{ SITEURL }}/">view current outages &raquo;</a></div>	
+					<h3 class=" text-muted">Resolved Outages</h3>
+					<div class="list-group">
+						{% for outage in outages['resolved'] %}
+							<div class="list-group-item">
+								<h3><a href="{{TICKET_TRACKER_URL}}{{outage.ticket}}">#{{outage.ticket}}</a> {{outage.title}}</h3>
+								<div>{{outage.content}}</div>
+								<div class="text-right font-weight-bold text-muted">{{outage.date|formatdate}} - 
+									{% if outage.metadata.outagefinish %}
+										{{outage.metadata.outagefinish|parsedate|formatdate}}
+									{% else %}
+										unknown
+									{% endif %}
+								</div>
+							</div>
+						{% endfor %}
+						</div>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+{% endblock content %}
