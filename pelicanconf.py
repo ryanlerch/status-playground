@@ -6,7 +6,7 @@ SITENAME = 'Fedora Infrastructure Status'
 SITEURL = ''
 
 PATH = 'content'
-
+STATIC_PATHS = []
 THEME = 'theme'
 
 USE_FOLDER_AS_CATEGORY = True
