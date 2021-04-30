@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Fedora Infrastructure Status</title>
+	<meta charset="utf-8" />
+
+	<link href="https://status.fedoraproject.org/feeds/ongoing.rss" type="application/rss+xml" rel="alternate" title="Fedora Infrastructure Status ongoing outages RSS Feed" />
+	<link href="https://status.fedoraproject.org/feeds/planned.rss" type="application/rss+xml" rel="alternate" title="Fedora Infrastructure Status planned outages RSS Feed" />
+	<link href="https://status.fedoraproject.org/feeds/resolved.rss" type="application/rss+xml" rel="alternate" title="Fedora Infrastructure Status resolved outages RSS Feed" />
+
+	<link href="https://status.fedoraproject.org/theme/fedora-bootstrap.css" type="text/css" rel="stylesheet" />
+	<link href="https://status.fedoraproject.org/theme/fedora-status.css" type="text/css" rel="stylesheet" />
+	<link href="https://status.fedoraproject.org/theme/fonts/hack.css" type="text/css" rel="stylesheet" />
+	<link href="https://status.fedoraproject.org/theme/fonts/open-sans.css" type="text/css" rel="stylesheet" />
+	<link href="https://status.fedoraproject.org/theme/fonts/font-awesome.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+	</script>
+	<script type="text/javascript" src="https://status.fedoraproject.org/theme/fedora-bootstrap.js"></script>
+
+</head>
+
+<body id="index" class="home">
+	<nav class="navbar navbar-expand-lg navbar-light masthead justify-content-between py-2">
+		<div class="container">
+			<a href="https://status.fedoraproject.org" class="navbar-brand"><img src="https://status.fedoraproject.org/theme/fedora-status.png" height="40px" alt="Fedora Status"/></a>
+		</div>
+	</nav>
+
+
+
+	<div class="bodycontent">
+
+		<div class="bg-light pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="text-right h4 mt-4"><a href="https://status.fedoraproject.org/">view current outages &raquo;</a></div>	
+					<h3 class=" text-muted">Resolved Outages</h3>
+					<div class="list-group">
+							<div class="list-group-item">
+								<h3><a href="https://pagure.io/fedora-infrastructure/issue/9898">#9898</a> Upgrade of Copr servers</h3>
+								<div><p>We're updating copr packages to the new versions which will bring new
+features and bugfixes. This outage impacted the <a href="https://copr.fedorainfracloud.org">copr-frontend</a>
+and the <a href="https://copr-be.cloud.fedoraproject.org/">copr-backend</a></p></div>
+								<div class="text-right font-weight-bold text-muted">Apr 28 2021, 11:00 UTC - 
+										Apr 28 2021, 12:07 UTC
+								</div>
+							</div>
+							<div class="list-group-item">
+								<h3><a href="https://pagure.io/fedora-infrastructure/issue/9867">#9867</a> teams.fedoraproject.org</h3>
+								<div><p>A number of updates and patches are pending on our taiga instance <a href="https://teams.fedoraproject.org">teams.fedoraproject.org</a>. During this time the service may be down or unresponsive.</p></div>
+								<div class="text-right font-weight-bold text-muted">Apr 13 2021, 08:30 UTC - 
+										Apr 13 2021, 16:28 UTC
+								</div>
+							</div>
+						</div>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="footer py-5 text-white">
+		<div class="container">
+				<div class="row footerlinks justify-content-center">
+				   <div class="col-sm-3 col-4 mt-3">
+					  <div>
+						 <dl>
+							<dt class="text-uppercase h4"><strong>About</strong></dt>
+							<dd><a href="https://getfedora.org/">Get Fedora Linux</a></dd>
+							<dd><a href="https://getfedora.org/en/sponsors/">Sponsors</a></dd>
+							<dd><a href="https://fedoramagazine.org">Fedora Magazine</a></dd>
+							<dd><a href="https://fedoraproject.org/wiki/Legal:Main#Legal">Legal</a></dd>
+						 </dl>
+					  </div>
+				   </div>
+				   <div class="col-sm-3 col-4 mt-3">
+					  <div>
+						 <dl>
+							<dt class="text-uppercase h4"><strong>Support</strong></dt>
+							<dd><a href="https://fedoraproject.org/wiki/Communicating_and_getting_help">Get Help</a></dd>
+							<dd><a href="https://ask.fedoraproject.org/">Ask Fedora</a></dd>
+							<dd><a href="https://fedoraproject.org/wiki/Common_F33_bugs">Common Bugs</a></dd>
+							<dd><a href="https://developer.fedoraproject.org/">Fedora Developer Portal</a></dd>
+						 </dl>
+					  </div>
+				   </div>
+				   <div class="col-sm-3 col-4 mt-3">
+					  <div>
+						 <dl>
+							<dt class="text-uppercase h4"><strong>Community</strong></dt>
+							<dd><a href="https://fedoraproject.org/wiki/Join">Join Fedora</a></dd>
+							<dd><a href="https://fedoraproject.org/wiki/Overview">About Fedora</a></dd>
+							<dd><a href="http://fedoraplanet.org">Planet Fedora</a></dd>
+							<dd><a href="https://accounts.fedoraproject.org/">Fedora Accounts</a></dd>
+						 </dl>
+					  </div>
+				   </div>
+				</div>
+				<div class="row footerlinks">
+				   <div class="col-12 text-center">
+					  <p> Fedora is sponsored by Red Hat. <a href="https://www.redhat.com/en/technologies/linux-platforms/articles/relationship-between-fedora-and-rhel">Learn more about the relationship between Red Hat and Fedora »</a> </p>
+					  <div class="py-3"> <a href="https://www.redhat.com/"><img class="rh-logo" height=24px src="https://status.fedoraproject.org/theme/redhat-logo.png" alt="Red Hat Logo"></a> </div>
+					  <p> © 2021 Red Hat, Inc. and others. </p>
+				   </div>
+				</div>
+			 </div>
+	</div>
+</body>
+</html>
