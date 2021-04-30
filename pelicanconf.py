@@ -36,7 +36,7 @@ AUTHOR_FEED_RSS = None
 DEFAULT_PAGINATION = False
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['filters']
+PLUGINS = ['filters', 'pelicanversion']
 
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -47,3 +47,6 @@ DIRECT_TEMPLATES = (('index', 'resolved'))
 # Some specific settings just for status.fp.o
 
 TICKET_TRACKER_URL = 'https://pagure.io/fedora-infrastructure/issue/'
+
+# Minimum Pelican Version -- used by our custom pelicanversion plugin
+MIN_PELICAN_VERSION = '4.5.4'

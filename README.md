@@ -2,7 +2,7 @@ This is a proof of concept for a new status.fp.o
 
 ### Trying it out
 
-1. ```sudo dnf install pelican```
+1. ```sudo dnf install pelican python-packaging```
 2. ```git clone https://github.com/ryanlerch/status-playground.git```
 3. ```cd status-playground```
 4. ```make devserver```
