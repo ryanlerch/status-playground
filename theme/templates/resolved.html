@@ -9,15 +9,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="text-right h4 mt-4"><a href="{{ SITEURL }}/">view current outages &raquo;</a></div>	
-					<h2 class=" text-muted">Resolved Outages</h2>
+					<div class="d-flex align-items-center mt-5">
+						<h2 class="text-muted">Resolved Outages</h2>
+						<div class="ml-auto h4"><a href="{{ SITEURL }}/">view current outages &raquo;</a></div>
+					</div>
 					<div class="list-group">
 						{% set lm = namespace(lastmonth="") %}
 						{% for outage in outages['resolved'] %}
 							{% if lm.lastmonth != outage.date|formatdate(formatstring='%B %Y') %}
 								{% set lm.lastmonth = outage.date|formatdate(formatstring='%B %Y') %}
 								<div class="list-group-item bg-light border-left-0 border-right-0 {{'border-top-0' if loop.first}}">
-									<h3 class="mb-0 mt-3">{{lm.lastmonth}}</h3>
+									<h3 class="mb-0 {{'mt-2' if loop.first else 'mt-3'}}">{{lm.lastmonth}}</h3>
 								</div>
 							{% endif %}
 
