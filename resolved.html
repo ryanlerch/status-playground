@@ -36,11 +36,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="text-right h4 mt-4"><a href="https://ryanlerch.github.io/status-playground/">view current outages &raquo;</a></div>	
-					<h3 class=" text-muted">Resolved Outages</h3>
+					<div class="d-flex align-items-center mt-5">
+						<h2 class="text-muted">Resolved Outages</h2>
+						<div class="ml-auto h4"><a href="https://ryanlerch.github.io/status-playground/">view current outages &raquo;</a></div>	
+					</div>
+					
 					<div class="list-group">
-							<div class="list-group-item">
-								<h3><a href="https://pagure.io/fedora-infrastructure/issue/9898">#9898</a> Upgrade of Copr servers</h3>
+								<div class="list-group-item bg-light border-left-0 border-right-0 border-top-0">
+									<h3 class="mb-0 mt-2">April 2021</h3>
+								</div>
+
+							<div class="list-group-item border-bottom">
+								<h4><a href="https://pagure.io/fedora-infrastructure/issue/9898">#9898</a> Upgrade of Copr servers</h4>
 								<div><p>We're updating copr packages to the new versions which will bring new
 features and bugfixes. This outage impacted the <a href="https://copr.fedorainfracloud.org">copr-frontend</a>
 and the <a href="https://copr-be.cloud.fedoraproject.org/">copr-backend</a></p></div>
@@ -48,11 +55,75 @@ and the <a href="https://copr-be.cloud.fedoraproject.org/">copr-backend</a></p><
 										Apr 28 2021, 12:07 UTC
 								</div>
 							</div>
-							<div class="list-group-item">
-								<h3><a href="https://pagure.io/fedora-infrastructure/issue/9867">#9867</a> teams.fedoraproject.org</h3>
+
+							<div class="list-group-item border-bottom">
+								<h4><a href="https://pagure.io/fedora-infrastructure/issue/9867">#9867</a> teams.fedoraproject.org</h4>
 								<div><p>A number of updates and patches are pending on our taiga instance <a href="https://teams.fedoraproject.org">teams.fedoraproject.org</a>. During this time the service may be down or unresponsive.</p></div>
 								<div class="text-right font-weight-bold text-muted">Apr 13 2021, 08:30 UTC - 
 										Apr 13 2021, 16:28 UTC
+								</div>
+							</div>
+
+							<div class="list-group-item border-bottom">
+								<h4><a href="https://pagure.io/fedora-infrastructure/issue/9814">#9814</a> System Upgrades</h4>
+								<div><p>We will be updating and rebooting various servers to bring them up to date and confirm changes from the 
+recent account system migration. During the outage window services may be up or down as various systems 
+reboot. No one service should be affected very long.</p>
+<p>Most services will be affected, with the exception of: mirrorlists, docs, hotspot, geoip, and getfedora.</p></div>
+								<div class="text-right font-weight-bold text-muted">Apr 1 2021, 19:00 UTC - 
+										Apr 1 2021, 22:27 UTC
+								</div>
+							</div>
+								<div class="list-group-item bg-light border-left-0 border-right-0 ">
+									<h3 class="mb-0 mt-3">March 2021</h3>
+								</div>
+
+							<div class="list-group-item border-bottom">
+								<h4><a href="https://pagure.io/fedora-infrastructure/issue/9747">#9747</a> Fedora Account System Replacement</h4>
+								<div><p>Replacement of FAS2 with the new Fedora Accounts  All Fedora Services will be affected.</p>
+<p>As this is the authentication system there may be issues logging in to some services. Users 
+may not be able to access people.fedoraproject.org or secondary.fedoraproject.org during the 
+outage. Maintainer test instances are a special case and as such will be in a "frozen" state 
+for access after the outage. This means that no updates will be made to users or ssh keys on 
+these machines.</p></div>
+								<div class="text-right font-weight-bold text-muted">Mar 24 2021, 10:30 UTC - 
+										Mar 25 2021, 21:52 UTC
+								</div>
+							</div>
+
+							<div class="list-group-item border-bottom">
+								<h4><a href="https://pagure.io/fedora-infrastructure/issue/9734">#9734</a> Upgrade of Copr servers</h4>
+								<div><p>We're updating copr packages to the new versions which will bring new
+features and bugfixes. This outage impacts the <a href="https://copr.fedorainfracloud.org">copr-frontend</a>
+and the <a href="https://copr-be.cloud.fedoraproject.org/">copr-backend</a></p></div>
+								<div class="text-right font-weight-bold text-muted">Mar 17 2021, 12:15 UTC - 
+										Mar 17 2021, 12:41 UTC
+								</div>
+							</div>
+								<div class="list-group-item bg-light border-left-0 border-right-0 ">
+									<h3 class="mb-0 mt-3">February 2021</h3>
+								</div>
+
+							<div class="list-group-item border-bottom">
+								<h4><a href="https://pagure.io/fedora-infrastructure/issue/9619">#9619</a> Module Build Service backend</h4>
+								<div><p>mbs-backend01.iad2.fedoraproject.org keeps reaching disk full so the disk needs to be grown. 
+This involves a brief shutdown of the instance to enlarge the logical volume. This only affects
+the Fedora instance of Module Build Service.</p></div>
+								<div class="text-right font-weight-bold text-muted">Feb 4 2021, 10:30 UTC - 
+										Feb 4 2021, 10:47 UTC
+								</div>
+							</div>
+
+							<div class="list-group-item border-bottom">
+								<h4><a href="https://pagure.io/fedora-infrastructure/issue/9612">#9612</a> Fedora Packager Dashboard production deployment</h4>
+								<div><p>We will be Moving the project from its temporary server to the final, production hosting.</p>
+<p>Affected Services include:</p>
+<ul>
+<li><strong>Fedora Packager Dashboard</strong> - you can use <a href="https://packager-dashboard.stg.fedoraproject.org/">staging instance</a> for the time being</li>
+<li><strong>Fedora Easy Karma</strong> - fast pre cached data from bodhi via oraculum won't be available, the app automatically falls back to the old and slow data fetching directly from Bodhi</li>
+</ul></div>
+								<div class="text-right font-weight-bold text-muted">Feb 2 2021, 08:00 UTC - 
+										Feb 4 2021, 12:24 UTC
 								</div>
 							</div>
 						</div>
