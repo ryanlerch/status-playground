@@ -1,6 +1,6 @@
 from datetime import datetime
 
-__all__ = ["parsedate", "categories_dict"]
+__all__ = ["parsedate", "formatdate", "categories_dict"]
 
 def parsedate(value, formatstring='%Y-%m-%d %H:%M%z'):
     return datetime.strptime(value, formatstring)
